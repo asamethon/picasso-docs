@@ -1,0 +1,22 @@
+## Kurulum
+### Gereksinimler: 
+
+- Kod editörü (VS Code, Cursor vb.)
+- ZSH
+ - Node
+ - Git
+
+#### ZSH Kurulumu
+Bilgisayarınızda "Terminal" uygulamasını açın ve `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` bu komutu çalıştırın ardından terminal uygulamasını kapatın.
+
+#### Node kurulumu (Eğer zaten kuruluysa lütfen bu kısmı atlayınız)
+Öncelikle bilgisayarınızda "Terminal" uygulamasını açıp `node -v` komutunu çalıştırmalısınız. Eğer görseldeki gibi bir çıktı alırsanız node zaten kurulu demektir. Ancak komut bulunamadı hatası alırsanız:
+
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+   
+bu komutu terminal uygulamasında çalıştırın ve yükleme işleminin bitmesinin ardından kod editörünüzde bilgisayarınızda user name'inizin olduğu klasörü açın ve kod editöründe `.zshrc` adlı dosyayı açın. Dosyanın en alt satırına 
+`export  NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" ||  printf %s "${XDG_CONFIG_HOME}/nvm")"`
+`[ -s  "$NVM_DIR/nvm.sh" ] && \.  "$NVM_DIR/nvm.sh"  # This loads nvm`
+bu iki kod parçasını yapıştırın ve `CMD + S` tuş kombinasyonu ile dosyayı kaydedin. (Eğer zaten varsa bir daha yapıştırmayın)
+
+Ardından terminal uygulamasını kapatıp açın ve `nvm -v` komutunu terminalinizde çalıştırın. Eğer size versiyon bilgilerinizi verdiyse NVM'i başarıyla kurmuş oluyoruz. Bu komutun ardından `nvm install --lts` komutunu çalıştırarak node'un en son versiyonunu bilgisayarımıza yüklüyoruz. Bu komutun ardından `nvm use --lts` komutunu çalıştırarak node'un en son versiyonunu bilgisayarımızda kullanmaya başlıyoruz.
