@@ -3,10 +3,8 @@
   "another": "Another Page",
   "installation": "Kurulum",
   "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
+  "installation/proje-kurulumu": "Proje Kurulumu",
+  "installation/paket-kurulumları": "Paket Kurulumları",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
