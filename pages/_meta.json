@@ -1,7 +1,14 @@
 {
   "index": "Introduction",
   "another": "Another Page",
-  "installation": "Kurulum",
+  "installation": {
+    "title": "Kurulum",
+    "type": "page",
+    "pages": [
+      "installation/proje-kurulumu",
+      "installation/paket-kurulumları"
+    ]
+  },
   "advanced": "Advanced (A Folder)",
   "installation/proje-kurulumu": "Proje Kurulumu",
   "installation/paket-kurulumları": "Paket Kurulumları",
