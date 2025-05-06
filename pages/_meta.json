@@ -1,15 +1,7 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "installation": {
-    "title": "Kurulum",
-    "type": "separator",
-    "items": {
-      "proje-kurulumu": "Proje Kurulumu",
-      "paket-kurulumları": "Paket Kurulumları"
-    }
-  },
-  "advanced": "Advanced (A Folder)",
+  "paket-kurulumları": "Paket Kurulumları",
+  "proje-kurulumu": "Proje Kurulumu",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
